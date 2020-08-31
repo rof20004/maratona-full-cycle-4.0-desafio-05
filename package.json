@@ -1,8 +1,8 @@
 {
   "name": "desafio-05",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "API rest com NestJS e configuração de CI com github actions",
+  "author": "Rodolfo do Nascimento Azevedo<rof20004@gmail.com>",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
