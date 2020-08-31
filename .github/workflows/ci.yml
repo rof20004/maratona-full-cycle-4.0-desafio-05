@@ -7,4 +7,4 @@ jobs:
             - uses: actions/checkout@v2
             - run: docker build -t ci .
             - run: docker container run -d -p 3000:3000 --name ci ci
-            - run: docker container exec -w /app ci yarn test 
+            - run: docker container exec -w /app ci ls -l
