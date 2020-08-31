@@ -5,6 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - docker build -t ci .
-            - docker container run -d -p 3000:3000 --name ci ci
-            - docker container exec ci yarn test 
+            - run: docker build -t ci .
+            - run: docker container run -d -p 3000:3000 --name ci ci
+            - run: docker container exec -w /app ci yarn test
